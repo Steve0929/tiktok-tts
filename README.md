@@ -14,8 +14,25 @@ npm i tiktok-tts
 const { config, createAudioFromText } = require('tiktok-tts')
 
 config('Your TikTok Session Id here');
+createAudioFromText('Text to be spoken goes here');
+```
+
+### Custom filename example
+```javascript
+const { config, createAudioFromText } = require('tiktok-tts')
+
+config('Your TikTok Session Id here');
 createAudioFromText('Text to be spoken goes here', 'filename');
 ```
+
+### Custom voice example
+```javascript
+const { config, createAudioFromText } = require('tiktok-tts')
+
+config('Your TikTok Session Id here');
+createAudioFromText('Text to be spoken goes here', 'filename', 'en_us_stormtrooper');
+```
+
 
 ## Get TikTok Session id
 
@@ -38,6 +55,6 @@ createAudioFromText(text, fileName, speaker)
 | fileName | filename/path for the generated audio file ```optional``` | ```audio``` | String|
 | speaker | TikTok speaker code ```optional``` | ```en_us_001``` | String|
 
-## Language Codes
-The following language codes are supported:
+## Speaker Codes
+The following speaker codes are supported:
 
