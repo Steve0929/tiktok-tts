@@ -26,14 +26,23 @@ createAudioFromText('Text to be spoken goes here', 'myAudio');
 ```
 Generated audio file will be saved as ```myAudio.mp3```
 
+### Custom path example
+```javascript
+const { config, createAudioFromText } = require('tiktok-tts')
+
+config('Your TikTok Session Id here');
+createAudioFromText('Text to be spoken goes here', './myDirectory/myAudio');
+```
+Generated audio file will be saved as ```myAudio.mp3``` inside the ```myDirectory``` directory.
+###### ⚠️ Please keep in mind that ```myDirectory``` needs to be an existing directory.
+
 ### Custom voice example
 ```javascript
 const { config, createAudioFromText } = require('tiktok-tts')
 
 config('Your TikTok Session Id here');
-createAudioFromText('Text to be spoken goes here', 'filename', 'en_us_stormtrooper');
+createAudioFromText('Text to be spoken goes here', 'myAudio', 'en_us_stormtrooper');
 ```
-
 
 ## Get TikTok Session id
 
