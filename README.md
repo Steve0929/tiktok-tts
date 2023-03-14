@@ -13,7 +13,7 @@ npm i tiktok-tts
 ```javascript
 const { config, createAudioFromText } = require('tiktok-tts')
 
-config('Your TikTok Session Id here');
+config('Your TikTok sessionid here');
 createAudioFromText('Text to be spoken goes here');
 ```
 
@@ -21,7 +21,7 @@ createAudioFromText('Text to be spoken goes here');
 ```javascript
 const { config, createAudioFromText } = require('tiktok-tts')
 
-config('Your TikTok Session Id here');
+config('Your TikTok sessionid here');
 createAudioFromText('Text to be spoken goes here', 'myAudio');
 ```
 Generated audio file will be saved as ```myAudio.mp3```
@@ -30,7 +30,7 @@ Generated audio file will be saved as ```myAudio.mp3```
 ```javascript
 const { config, createAudioFromText } = require('tiktok-tts')
 
-config('Your TikTok Session Id here');
+config('Your TikTok sessionid here');
 createAudioFromText('Text to be spoken goes here', './myDirectory/myAudio');
 ```
 Generated audio file will be saved as ```myAudio.mp3``` inside the ```myDirectory``` directory.
@@ -40,11 +40,15 @@ Generated audio file will be saved as ```myAudio.mp3``` inside the ```myDirector
 ```javascript
 const { config, createAudioFromText } = require('tiktok-tts')
 
-config('Your TikTok Session Id here');
+config('Your TikTok sessionid here');
 createAudioFromText('Text to be spoken goes here', 'myAudio', 'en_us_stormtrooper');
 ```
 
-## Get TikTok Session id
+## Get TikTok Session id 🍪
+- Log in to [TikTok Web](https://tiktok.com)
+- Install [Cookie Editor extension](https://cookie-editor.cgagnier.ca) for your browser.
+- While on TikTok web, open the extension and look for ```sessionid```
+- Copy the ```sessionid``` value. (It should be an alphanumeric value)
 
 ## Available functions
 ```javascript
@@ -52,7 +56,7 @@ config(TikTokSessionId)
 ```
 | Parameter     | Description             | Default   |type |
 | ------------- |:-------------           | -----    |-----|
-| TiktokSessionId| Your TikTok Session id | ```null``` | String|
+| TiktokSessionId| Your TikTok sessionid | ```null``` | String|
 
 
 ```javascript
