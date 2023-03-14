@@ -45,8 +45,8 @@ createAudioFromText('Text to be spoken goes here', 'myAudio', 'en_us_stormtroope
 ```
 
 ## Get TikTok Session id 🍪
-- Log in to [TikTok Web](https://tiktok.com)
 - Install [Cookie Editor extension](https://cookie-editor.cgagnier.ca) for your browser.
+- Log in to [TikTok Web](https://tiktok.com)
 - While on TikTok web, open the extension and look for ```sessionid```
 - Copy the ```sessionid``` value. (It should be an alphanumeric value)
 
