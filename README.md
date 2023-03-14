@@ -22,8 +22,9 @@ createAudioFromText('Text to be spoken goes here');
 const { config, createAudioFromText } = require('tiktok-tts')
 
 config('Your TikTok Session Id here');
-createAudioFromText('Text to be spoken goes here', 'filename');
+createAudioFromText('Text to be spoken goes here', 'myAudio');
 ```
+Generated audio file will be saved as ```myAudio.mp3```
 
 ### Custom voice example
 ```javascript
