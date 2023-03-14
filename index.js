@@ -29,8 +29,7 @@ function handleStatusError(status_code) {
     }
 }
 
-async function createAudioFromText(text, fileName, speaker) {
-    const text_speaker = speaker ? speaker : DEFAULT_VOICE;
+async function createAudioFromText(text = null, fileName = 'audio', text_speaker = DEFAULT_VOICE) {
     const req_text = prepareText(text);
     const URL = `${BASE_URL}/?text_speaker=${text_speaker}&req_text=${req_text}&speaker_map_type=0&aid=1233`;
     const headers = {
