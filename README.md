@@ -44,6 +44,21 @@ config('Your TikTok sessionid here');
 createAudioFromText('Text to be spoken goes here', 'myAudio', 'en_us_stormtrooper');
 ```
 
+### Using ```await``` with the ```createAudioFromText()``` function
+
+```javascript
+const { config, createAudioFromText } = require('tiktok-tts')
+
+config('Your TikTok sessionid here');
+
+async function yourFunction(){
+    await createAudioFromText('Text that will be spoken');
+    console.log("Audio file generated!");
+}
+
+yourFunction();
+```
+
 ## Get TikTok Session id 🍪
 - Install [Cookie Editor extension](https://cookie-editor.cgagnier.ca) for your browser.
 - Log in to [TikTok Web](https://tiktok.com)
@@ -58,6 +73,7 @@ config(TikTokSessionId)
 | ------------- |:-------------           | -----    |-----|
 | TiktokSessionId| Your TikTok sessionid | ```null``` | String|
 
+<br/>
 
 ```javascript
 createAudioFromText(text, fileName, speaker)
