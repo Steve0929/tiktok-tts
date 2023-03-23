@@ -1,12 +1,14 @@
 const fs = require('fs');
 const axios = require('axios');
-const BASE_URL = 'https://api16-normal-useast5.us.tiktokv.com/media/api/text/speech/invoke';
+let BASE_URL = 'https://api16-normal-c-useast1a.tiktokv.com/media/api/text/speech/invoke';
+
 const DEFAULT_VOICE = 'en_us_001';
 
 let tiktokSessionId = null;
 
-function config(userTiktokSessionId) {
+function config(userTiktokSessionId, customBaseUrl) {
     tiktokSessionId = userTiktokSessionId
+    if (customBaseUrl) BASE_URL = customBaseUrl;
 }
 
 function prepareText(text) {
@@ -50,7 +52,7 @@ async function createAudioFromText(text = null, fileName = 'audio', text_speaker
 
 
 module.exports = {
-    config: function (tiktokSessionId) { return config(tiktokSessionId) },
+    config: function (tiktokSessionId, customBaseUrl) { return config(tiktokSessionId, customBaseUrl) },
     createAudioFromText: async function (text, path, speaker) {
         if (tiktokSessionId) return createAudioFromText(text, path, speaker)
         throw new Error(`tiktok-tts has not been configured! Make sure you run config(yourTiktokSessionIdHere)`);
