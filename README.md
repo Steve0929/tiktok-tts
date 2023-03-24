@@ -67,11 +67,14 @@ yourFunction();
 
 ## Available functions
 ```javascript
-config(TikTokSessionId)
+config(tiktokSessionId, customBaseUrl)
 ```
 | Parameter     | Description             | Default   |type |
-| ------------- |:-------------           | -----    |-----|
-| TiktokSessionId| Your TikTok sessionid | ```null``` | String|
+| ------------- |:-------------           | ------------------    |-----|
+| tiktokSessionId| Your TikTok sessionid | ```null``` | String|
+| customBaseUrl| Custom TikTok API url ```optional```  | ```-``` | String|
+
+* ```https://api16-normal-c-useast1a.tiktokv.com/media/api/text/speech/invoke``` will be used if no customBaseUrl is specified.
 
 <br/>
 
