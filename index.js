@@ -1,6 +1,6 @@
 const fs = require('fs');
 const axios = require('axios');
-let BASE_URL = 'https://api16-normal-c-useast1a.tiktokv.com/media/api/text/speech/invoke';
+let BASE_URL = 'https://api16-normal-v6.tiktokv.com/media/api/text/speech/invoke';
 
 const DEFAULT_VOICE = 'en_us_001';
 
