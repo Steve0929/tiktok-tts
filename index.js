@@ -11,6 +11,13 @@ function config(userTiktokSessionId, customBaseUrl) {
     if (customBaseUrl) BASE_URL = customBaseUrl;
 }
 
+function getConfig() {
+    return {
+        BASE_URL: BASE_URL,
+        tiktokSessionId: tiktokSessionId
+    }
+}
+
 function prepareText(text) {
     text = text.replace('+', 'plus');
     text = text.replace(/\s/g, '+');
@@ -56,5 +63,6 @@ module.exports = {
     createAudioFromText: async function (text, path, speaker) {
         if (tiktokSessionId) return createAudioFromText(text, path, speaker)
         throw new Error(`tiktok-tts has not been configured! Make sure you run config(yourTiktokSessionIdHere)`);
-    }
+    },
+    getConfig: getConfig
 }
