@@ -1,4 +1,6 @@
 name: Publish package to npm registry
+permissions:
+  contents: write
 on:
   push:
     branches:
