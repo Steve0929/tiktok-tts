@@ -11,14 +11,13 @@ jobs:
   test-cases:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repo 📥
         uses: actions/checkout@v3
-      - name: Setup Node
+      - name: Setup Node ⚙️
         uses: actions/setup-node@v3
         with:
           node-version: "16.x"
-          registry-url: "https://registry.npmjs.org"
-      - name: Install npm dependencies 📥
+      - name: Install npm dependencies 📀
         run: npm ci
       - name: Run the test cases 🧪
         run: npm test
