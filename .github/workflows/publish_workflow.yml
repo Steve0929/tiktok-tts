@@ -1,0 +1,32 @@
+name: Publish package to npm registry
+on:
+  push:
+    branches:
+      - "main"
+jobs:
+  publish-package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo 📥
+        uses: actions/checkout@v3
+      - name: Setup Node ⚙️
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16.x"
+          registry-url: "https://registry.npmjs.org"
+      - name: Install npm dependencies 📀
+        run: npm ci
+      - name: Run the test cases 🧪
+        run: npm test
+      - name: Setup github email 📧
+        run: git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+      - name: Setup github username 👤
+        run: git config user.name "$GITHUB_ACTOR"
+      - name: Bump the package version 🆙
+        run: npm version patch -m "🤖 Update version to %s [skip actions]"
+      - name: Publish updated npm package 🚀📦
+        env: 
+         NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTO_TOKEN }}
+        run: npm publish
+      - name: Push updated package version 🔄
+        run: git push origin
