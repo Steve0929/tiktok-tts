@@ -22,7 +22,7 @@ jobs:
         run: npm test
       - name: Setup github email 📧
         run: git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
-      - name: Setup github username 👤
+      - name: Setup github username 👨
         run: git config user.name "$GITHUB_ACTOR"
       - name: Bump the package version 🆙
         run: npm version patch -m "🤖 Update version to %s [skip actions]"
