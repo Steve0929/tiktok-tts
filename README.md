@@ -170,6 +170,22 @@ The following speaker codes are supported:
 |             | Japanese - Female 2        | jp_003                        |
 |             | Japanese - Female 3        | jp_005                        |
 |             | Japanese - Male            | jp_006                        |
+|             | りーさ                      | jp_female_fujicochan          |
+|             | 世羅鈴                      | jp_female_hasegawariona       |
+|             | Morio’s Kitchen            | jp_male_keiichinakano         |
+|             | 夏絵ココ                    | jp_female_oomaeaika           |
+|             | 低音ボイス                  | jp_male_yujinchigusa          |
+|             | 四郎                        | jp_female_shirou             |
+|             | 玉川寿紀                    | jp_male_tamawakazuki          |
+|             | 庄司果織                    | jp_female_kaorishoji         |
+|             | 八木沙季                    | jp_female_yagishaki          |
+|             | ヒカキン                    | jp_male_hikakin              |
+|             | 丸山礼                      | jp_female_rei                |
+|             | 修一朗                      | jp_male_shuichiro            |
+|             | マツダ家の日常               | jp_male_matsudake            |
+|             | まちこりーた                 | jp_female_machikoriiita      |
+|             | モジャオ                    | jp_male_matsuo                |
+|             | モリスケ                    | jp_male_osada                 |
 | Korean      | Korean - Male 1            | kr_002                        |
 |             | Korean - Female            | kr_003                        |
 |             | Korean - Male 2            | kr_004                        |
