@@ -3,6 +3,9 @@
 This package provides a simple way to generate text-to-speech audio files from TikTok's text-to-speech (TTS) API in Node.js.
 
 ![example workflow](https://github.com/Steve0929/tiktok-tts/actions/workflows/publish_workflow.yml/badge.svg)
+![downloads](https://img.shields.io/npm/dm/tiktok-tts.svg?color=5f63f1)
+
+
 ## Installation
 ```javascript
 npm i tiktok-tts
