@@ -192,6 +192,8 @@ The following speaker codes are supported:
 | Korean      | Korean - Male 1            | kr_002                        |
 |             | Korean - Female            | kr_003                        |
 |             | Korean - Male 2            | kr_004                        |
+| Vietnamese  | Female                     | BV074_streaming               |
+|             | Male                       | BV075_streaming               |
 | Other       | Alto                       | en_female_f08_salut_damour    |
 |             | Tenor                      | en_male_m03_lobby             |
 |             | Sunshine Soon              | en_male_m03_sunshine_soon     |
