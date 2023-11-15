@@ -111,6 +111,7 @@ The following speaker codes are supported:
 |               | Story Teller            | en_male_narration               |
 |               | Mr. GoodGuy             | en_male_deadpool                |
 |               | Narrator                | en_uk_001                       |
+|               | Male English UK         | en_uk_003                       |
 |               | Metro                   | en_au_001                       |
 |               | Alfred                  | en_male_jarvis                  |
 |               | ashmagic                | en_male_ashmagic                |
