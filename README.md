@@ -79,6 +79,35 @@ config(tiktokSessionId, customBaseUrl)
 | customBaseUrl| Custom TikTok API url ```optional```  | ```-``` | String|
 
 * By default ```https://api16-normal-c-useast1a.tiktokv.com/media/api/text/speech/invoke``` will be used if no customBaseUrl is specified.
+<details>
+    <summary>List of known URLs (You can try these if the default url is not working on your region)</summary>
+    
+   - https://api16-normal-c-useast1a.tiktokv.com/media/api/text/speech/invoke
+    
+   - https://api16-core-c-useast1a.tiktokv.com/media/api/text/speech/invoke
+     
+   - https://api16-normal-useast5.us.tiktokv.com/media/api/text/speech/invoke
+     
+   - https://api16-core.tiktokv.com/media/api/text/speech/invoke
+     
+   - https://api16-core-useast5.us.tiktokv.com/media/api/text/speech/invoke
+     
+   - https://api19-core-c-useast1a.tiktokv.com/media/api/text/speech/invoke
+     
+   - https://api-core.tiktokv.com/media/api/text/speech/invoke
+     
+   - https://api-normal.tiktokv.com/media/api/text/speech/invoke
+     
+   - https://api19-normal-c-useast1a.tiktokv.com/media/api/text/speech/invoke
+     
+   - https://api16-core-c-alisg.tiktokv.com/media/api/text/speech/invoke
+     
+   - https://api16-normal-c-alisg.tiktokv.com/media/api/text/speech/invoke
+     
+   - https://api22-core-c-alisg.tiktokv.com/media/api/text/speech/invoke
+     
+   - https://api16-normal-c-useast2a.tiktokv.com/media/api/text/speech/invoke
+</details>
 
 <br/>
 
