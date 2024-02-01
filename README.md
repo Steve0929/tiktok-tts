@@ -193,9 +193,11 @@ The following speaker codes are supported:
 |             | Portuguese BR - Female 2   | br_003                        |
 |             | Portuguese BR - Female 3   | br_004                        |
 |             | Portuguese BR - Male       | br_005                        |
+|             | Ivete Sangalo              | bp_female_ivete               |
 |             | Ludmilla                   | bp_female_ludmilla            |
 |             | Lhays Macedo               | pt_female_lhays               |
 |             | Laizza                     | pt_female_laizza              |
+|             | Galvão Bueno               | pt_male_bueno                 |
 | German      | German - Female            | de_001                        |
 |             | German - Male              | de_002                        |
 | Indonesian  | Indonesian - Female        | id_001                        |
